@@ -1,0 +1,26 @@
+<polymer-element name="coger-ovni">
+    <template>
+    <style>
+      div {
+        font-size: 24pt;
+        text-align: center;
+        margin-top: 140px;
+      }s
+      button {
+        font-size: 24pt;
+        margin-bottom: 20px;
+      }
+    </style>
+    <div>
+      <form action="envio.php" method="post">
+      <input type="hidden" name="latitud" value="{{latitud}}">
+      <input type="hidden" name="longitud" value="{{longitud}}">
+        Escriba un comentario:</br></br>
+        <input type="textarea" name="comentario"></br>
+      <input type="submit" value="OVNI VA!" class="button">
+      </form>
+      </div>
+  </template>
+    <script type="application/dart" src="clickcounter.dart"></script>
+</polymer-element>
+
